@@ -1,0 +1,22 @@
+# Local environments, caches, and large downloaded/frozen data are
+# reproducible outputs rather than source-controlled project files.
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+lightning_logs/
+# The raw UCI benchmark download is large and re-downloadable with the
+# sha256 recorded in BENCHMARKS.md; the small measured-run evidence JSONs
+# stay tracked so verify_claims.py can audit them on a fresh clone.
+data/benchmark/**/*.txt
+data/benchmark/**/*.zip
+data/hourly/
+data/frozen/raw/
+# Frozen raw extracts regenerate with `python -m src.freeze`; manifest.json
+# and checksums.sha256 stay tracked so the extract can be audited.
+data/frozen/*.jsonl
+data/frozen/*.csv
+*.part
+.DS_Store

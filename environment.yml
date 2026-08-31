@@ -1,0 +1,23 @@
+name: river-levels-tft
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - duckdb
+  - matplotlib
+  - requests
+  - pyyaml
+  - jupyterlab
+  - pip:
+      # PyTorch can use the MPS backend on the Apple Silicon workstation.
+      - torch>=2.2,<3
+      - lightning>=2.2,<3
+      - pytorch-forecasting>=1.1,<2
+      - lightgbm>=4,<5
+      - tqdm>=4.66,<5

@@ -1,0 +1,80 @@
+{
+  "baselines": {
+    "ets": {
+      "per_series": {
+        "MT_001": {
+          "mae_from_p50": 1.3870082949178137,
+          "n_values": 96,
+          "p10_pinball": 0.7535469395532081,
+          "p50_pinball": 0.6935041474589069,
+          "p90_pinball": 0.6334613553646058
+        },
+        "MT_002": {
+          "mae_from_p50": 3.184201516125904,
+          "n_values": 96,
+          "p10_pinball": 2.703514402517532,
+          "p50_pinball": 1.592100758062952,
+          "p90_pinball": 0.4806871136083721
+        }
+      },
+      "status": "measured"
+    },
+    "lightgbm": {
+      "per_series": {
+        "MT_001": {
+          "mae_from_p50": 1.4320985822907055,
+          "n_values": 96,
+          "p10_pinball": 0.2262835882373185,
+          "p50_pinball": 0.7160492911453528,
+          "p90_pinball": 1.2058149940533875
+        },
+        "MT_002": {
+          "mae_from_p50": 3.2346030520107996,
+          "n_values": 96,
+          "p10_pinball": 2.728181078983481,
+          "p50_pinball": 1.6173015260053998,
+          "p90_pinball": 0.5064219730273192
+        }
+      },
+      "status": "measured"
+    },
+    "seasonal_naive": {
+      "per_series": {
+        "MT_001": {
+          "mae_from_p50": 1.2425972927241924,
+          "n_values": 96,
+          "p10_pinball": 0.5948604060913688,
+          "p50_pinball": 0.6212986463620962,
+          "p90_pinball": 0.6477368866328237
+        },
+        "MT_002": {
+          "mae_from_p50": 3.2820649596965374,
+          "n_values": 96,
+          "p10_pinball": 2.734560218112849,
+          "p50_pinball": 1.6410324798482687,
+          "p90_pinball": 0.5475047415836886
+        }
+      },
+      "status": "measured"
+    }
+  },
+  "panel": {
+    "end": "2014-09-07 23:00:00",
+    "paper_window_days": [
+      1096,
+      1346
+    ],
+    "rows": 12000,
+    "series": 2,
+    "start": "2014-01-01 00:00:00"
+  },
+  "source": {
+    "archive_sha256": "f6c4d0e0df12ecdb9ea008dd6eef3518adb52c559d04a9bac2e1b81dcfc8d4e1",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00321/LD2011_2014.txt.zip"
+  },
+  "status": "measured_data_prepared",
+  "tft": {
+    "reason": "--skip-tft",
+    "status": "skipped"
+  }
+}

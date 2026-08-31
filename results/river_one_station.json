@@ -1,0 +1,119 @@
+{
+  "baselines": {
+    "ets": {
+      "by_station": [
+        {
+          "interval_coverage": 0.0,
+          "mae_from_p50": 0.00965983210140727,
+          "n_forecasts": 48,
+          "n_values": 48,
+          "p10_pinball": 0.006698562793792003,
+          "p50_pinball": 0.004829916050703635,
+          "p90_pinball": 0.002961269307615266,
+          "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+        }
+      ],
+      "interval_coverage_mean": 0.0,
+      "max_windows_per_station": 2,
+      "metrics": {
+        "mae_from_p50": 0.00965983210140727,
+        "n_values": 48,
+        "p10_pinball": 0.006698562793792003,
+        "p50_pinball": 0.004829916050703635,
+        "p90_pinball": 0.002961269307615266
+      },
+      "n_forecasts": 48,
+      "n_origins": 2,
+      "status": "ok"
+    },
+    "lightgbm": {
+      "by_station": [
+        {
+          "interval_coverage": 0.0,
+          "mae_from_p50": 0.024472077005927684,
+          "n_forecasts": 48,
+          "n_values": 48,
+          "p10_pinball": 0.014964262364477633,
+          "p50_pinball": 0.012236038502963842,
+          "p90_pinball": 0.009507814641450053,
+          "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+        }
+      ],
+      "interval_coverage_mean": 0.0,
+      "max_windows_per_station": 2,
+      "metrics": {
+        "mae_from_p50": 0.024472077005927684,
+        "n_values": 48,
+        "p10_pinball": 0.014964262364477633,
+        "p50_pinball": 0.012236038502963842,
+        "p90_pinball": 0.009507814641450053
+      },
+      "n_forecasts": 48,
+      "n_origins": 2,
+      "status": "ok"
+    },
+    "seasonal_naive": {
+      "by_station": [
+        {
+          "interval_coverage": 0.0,
+          "mae_from_p50": 0.01969791666666661,
+          "n_forecasts": 48,
+          "n_values": 48,
+          "p10_pinball": 0.00991562499999998,
+          "p50_pinball": 0.009848958333333305,
+          "p90_pinball": 0.009782291666666632,
+          "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+        }
+      ],
+      "interval_coverage_mean": 0.0,
+      "max_windows_per_station": 2,
+      "metrics": {
+        "mae_from_p50": 0.01969791666666661,
+        "n_values": 48,
+        "p10_pinball": 0.00991562499999998,
+        "p50_pinball": 0.009848958333333305,
+        "p90_pinball": 0.009782291666666632
+      },
+      "n_forecasts": 48,
+      "n_origins": 2,
+      "status": "ok"
+    }
+  },
+  "created_at_utc": "2026-08-27T20:41:11Z",
+  "data_dir": "data/hourly",
+  "markdown_summary": "### River baseline evaluation\nTest targets: 2025-10-01 to 2026-01-01 (UTC); 1 station(s); max origins per station are bounded.\n\n| Model | Status | Forecast values | P50 pinball | P90 pinball | MAE |\n|---|---|---:|---:|---:|---:|\n| seasonal_naive | ok | 48 | 0.00984896 | 0.00978229 | 0.0196979 |\n| ets | ok | 48 | 0.00482992 | 0.00296127 | 0.00965983 |\n| lightgbm | ok | 48 | 0.012236 | 0.00950781 | 0.0244721 |\n| TFT | not_requested | n/a | n/a | n/a | n/a |\n\nScores are measured only on finite target windows; unavailable/error models have no fabricated metrics.",
+  "notes": [
+    "Evaluation uses the shared rolling_evaluate/summarize_forecasts functions.",
+    "No imputation is applied before target-window selection.",
+    "This is retrospective research evaluation, not operational warning logic."
+  ],
+  "schema": "river-experiment-v1",
+  "split": {
+    "data_start": "2024-01-01",
+    "encoder_hours": 168,
+    "horizon_hours": 24,
+    "rolling_origin_step_hours": 24,
+    "test_end_exclusive": "2026-01-01",
+    "train_end_exclusive": "2025-07-01",
+    "validation_end_exclusive": "2025-10-01"
+  },
+  "splits_path": "configs/splits.yml",
+  "station_config": "configs/stations.yml",
+  "stations": [
+    {
+      "aggregation_invalid_rows": 5,
+      "file": "data/hourly/8496ce69-482c-406a-a2f0-ac418ef8f099.csv",
+      "finite_values": 17539,
+      "first_timestamp": "2024-01-01T00:00:00+00:00",
+      "last_timestamp": "2025-12-31T23:00:00+00:00",
+      "missing_values": 5,
+      "quality_masked_rows": 5,
+      "rows": 17544,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    }
+  ],
+  "tft": {
+    "reason": "TFT execution requires --run-tft and an implemented src.tft runner.",
+    "status": "not_requested"
+  }
+}

@@ -1,0 +1,22 @@
+# Initial rules are explicit study decisions; validate them against the
+# frozen extract before any model run.
+target_quality:
+  include: [Good, Estimated]
+  mask: [Suspect, Unchecked, Missing]
+  blank_quality: mask
+  keep_quality_columns: true
+  keep_qcode_column: true
+  edited_qcode: preserve_and_report
+
+timestamps:
+  input_period_seconds: 900
+  normalize_timezone: UTC
+  reject_duplicate_timestamps: true
+  reject_off_grid_timestamps: true
+
+hourly_aggregation:
+  source_observations_per_bin: 4
+  minimum_valid_observations: 3
+  retain_valid_count: true
+  retain_quality_mask: true
+  do_not_impute_before_split: true

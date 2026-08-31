@@ -1,0 +1,60 @@
+{
+  "baselines": {
+    "seasonal_naive": {
+      "per_series": {
+        "MT_001": {
+          "mae_from_p50": 1.3615693739424666,
+          "n_values": 24,
+          "p10_pinball": 0.6437711505922151,
+          "p50_pinball": 0.6807846869712333,
+          "p90_pinball": 0.7177982233502517
+        }
+      },
+      "status": "measured"
+    }
+  },
+  "panel": {
+    "end": "2014-09-07 23:00:00",
+    "paper_window_days": [
+      1096,
+      1346
+    ],
+    "rows": 6000,
+    "series": 1,
+    "start": "2014-01-01 00:00:00"
+  },
+  "source": {
+    "archive_sha256": "f6c4d0e0df12ecdb9ea008dd6eef3518adb52c559d04a9bac2e1b81dcfc8d4e1",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00321/LD2011_2014.txt.zip"
+  },
+  "status": "measured_data_prepared",
+  "tft": {
+    "config": {
+      "attention_head_size": 2,
+      "batch_size": 128,
+      "encoder_length": 168,
+      "hidden_continuous_size": 8,
+      "hidden_size": 16,
+      "horizon": 24,
+      "learning_rate": 0.001,
+      "max_epochs": 1,
+      "seed": 42
+    },
+    "device": "cpu",
+    "metrics": {
+      "mae_from_p50": 15.295770291239023,
+      "n_values": 24,
+      "p10_pinball": 1.59020626329196,
+      "p50_pinball": 7.647885145619512,
+      "p90_pinball": 6.997720670700073
+    },
+    "paper_reference": {
+      "p50_pinball": 0.055,
+      "p90_pinball": 0.027
+    },
+    "series": 1,
+    "status": "measured",
+    "test_forecast_values": 24,
+    "train_rows": 5065
+  }
+}

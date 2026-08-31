@@ -1,0 +1,1814 @@
+{
+  "calibration": {
+    "n_forecasts": 384,
+    "n_references": 192
+  },
+  "model": "tft",
+  "notes": [
+    "Residual references use the validation forecasts emitted by the same fitted TFT run.",
+    "This is a smoke-run diagnostic; the one-epoch/small-window model is not a calibrated operational predictor.",
+    "Events are retrospective review records, not alerts or flood warnings."
+  ],
+  "schema": "river-anomaly-review-v1",
+  "source_results": "results/river_all_stations_tft_epoch1.json",
+  "summary_by_station": [
+    {
+      "anomaly_count": 22,
+      "anomaly_rate": 0.4583333333333333,
+      "large_residual_count": 20,
+      "n_forecasts": 48,
+      "outside_interval_count": 2,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 41,
+      "anomaly_rate": 0.8541666666666666,
+      "large_residual_count": 41,
+      "n_forecasts": 48,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 45,
+      "anomaly_rate": 0.9375,
+      "large_residual_count": 30,
+      "n_forecasts": 48,
+      "outside_interval_count": 22,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 48,
+      "anomaly_rate": 1.0,
+      "large_residual_count": 45,
+      "n_forecasts": 48,
+      "outside_interval_count": 41,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 38,
+      "anomaly_rate": 0.7916666666666666,
+      "large_residual_count": 30,
+      "n_forecasts": 48,
+      "outside_interval_count": 12,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 29,
+      "anomaly_rate": 0.6041666666666666,
+      "large_residual_count": 29,
+      "n_forecasts": 48,
+      "outside_interval_count": 2,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 0.041666666666666664,
+      "large_residual_count": 2,
+      "n_forecasts": 48,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 16,
+      "anomaly_rate": 0.3333333333333333,
+      "large_residual_count": 16,
+      "n_forecasts": 48,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    }
+  ],
+  "summary_by_station_horizon": [
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 1,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 2,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 3,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 4,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 5,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 6,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 7,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 8,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 9,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 10,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 11,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 12,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 13,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 14,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 15,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 16,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 17,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 18,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 19,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 20,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 21,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 22,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 23,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 24,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "0dcf81cb-5305-4e0b-b150-9b733ac44d0b"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 1,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 2,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 3,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 4,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 5,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 6,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 7,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 8,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 9,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 10,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 11,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 12,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 13,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 14,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 15,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 16,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 17,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 18,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 19,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 20,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 21,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 22,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 23,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 24,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "213d70b2-894b-406b-9dc3-31d3ccec7f54"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 1,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 2,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 3,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 4,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 5,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 6,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 7,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 8,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 9,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 10,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 11,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 12,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 13,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 14,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 15,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 16,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 17,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 18,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 19,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 20,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 21,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 22,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 23,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 24,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "3c43b72d-03a7-46e1-86c7-76dd97808544"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 1,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 2,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 3,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 4,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 5,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 6,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 7,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 8,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 9,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 10,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 11,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 12,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 13,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 14,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 15,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 16,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 17,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 18,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 19,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 20,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 21,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 22,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 23,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 24,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 2,
+      "station_guid": "3c4d4f78-2d0e-474a-b884-65a9daca18fb"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 1,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 2,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 3,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 4,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 5,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 6,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 7,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 8,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 9,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 10,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 11,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 12,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 13,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 14,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 15,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 16,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 17,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 18,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 19,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 20,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 21,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 22,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 23,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 24,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8496ce69-482c-406a-a2f0-ac418ef8f099"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 1,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 2,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 3,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 4,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 5,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 6,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 7,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 8,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 9,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 10,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 11,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 12,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 13,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 14,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 15,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 16,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 17,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 18,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 19,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 20,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 21,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 22,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 23,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 24,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 1,
+      "station_guid": "8820d897-a09e-4857-8095-5834fee6962f"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 1,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 1,
+      "anomaly_rate": 0.5,
+      "horizon_step": 2,
+      "large_residual_count": 1,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 3,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 4,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 5,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 6,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 7,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 8,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 9,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 10,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 11,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 12,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 13,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 14,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 15,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 16,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 17,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 18,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 19,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 20,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 21,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 22,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 23,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 24,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "9ad5d28c-7cfe-46db-b39d-58701689cd59"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 1,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 2,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 3,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 4,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 5,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 6,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 7,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 2,
+      "anomaly_rate": 1.0,
+      "horizon_step": 8,
+      "large_residual_count": 2,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 9,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 10,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 11,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 12,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 13,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 14,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 15,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 16,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 17,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 18,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 19,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 20,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 21,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 22,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 23,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    },
+    {
+      "anomaly_count": 0,
+      "anomaly_rate": 0.0,
+      "horizon_step": 24,
+      "large_residual_count": 0,
+      "n_forecasts": 2,
+      "outside_interval_count": 0,
+      "station_guid": "e786e60f-a0f1-4955-aa57-f22ba39c7427"
+    }
+  ],
+  "test": {
+    "n_forecasts": 384
+  },
+  "threshold": 3.5
+}

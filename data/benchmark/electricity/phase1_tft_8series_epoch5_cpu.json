@@ -1,0 +1,109 @@
+{
+  "baselines": {
+    "seasonal_naive": {
+      "per_series": {
+        "MT_001": {
+          "mae_from_p50": 1.2425972927241924,
+          "n_values": 96,
+          "p10_pinball": 0.5948604060913688,
+          "p50_pinball": 0.6212986463620962,
+          "p90_pinball": 0.6477368866328237
+        },
+        "MT_002": {
+          "mae_from_p50": 3.2820649596965374,
+          "n_values": 96,
+          "p10_pinball": 2.734560218112849,
+          "p50_pinball": 1.6410324798482687,
+          "p90_pinball": 0.5475047415836886
+        },
+        "MT_003": {
+          "mae_from_p50": 0.12443889371560977,
+          "n_values": 96,
+          "p10_pinball": 0.046834274543874954,
+          "p50_pinball": 0.06221944685780489,
+          "p90_pinball": 0.07760461917173483
+        },
+        "MT_004": {
+          "mae_from_p50": 9.19927168021679,
+          "n_values": 96,
+          "p10_pinball": 3.9602388211382062,
+          "p50_pinball": 4.599635840108395,
+          "p90_pinball": 5.239032859078584
+        },
+        "MT_005": {
+          "mae_from_p50": 4.878048780487805,
+          "n_values": 96,
+          "p10_pinball": 2.3501016260162597,
+          "p50_pinball": 2.4390243902439024,
+          "p90_pinball": 2.527947154471545
+        },
+        "MT_006": {
+          "mae_from_p50": 11.160714285714306,
+          "n_values": 96,
+          "p10_pinball": 3.9434523809523974,
+          "p50_pinball": 5.580357142857153,
+          "p90_pinball": 7.217261904761911
+        },
+        "MT_007": {
+          "mae_from_p50": 1.99324006029772,
+          "n_values": 96,
+          "p10_pinball": 1.6808578292820806,
+          "p50_pinball": 0.99662003014886,
+          "p90_pinball": 0.3123822310156395
+        },
+        "MT_008": {
+          "mae_from_p50": 18.869248035914698,
+          "n_values": 96,
+          "p10_pinball": 5.611672278338944,
+          "p50_pinball": 9.434624017957349,
+          "p90_pinball": 13.257575757575752
+        }
+      },
+      "status": "measured"
+    }
+  },
+  "panel": {
+    "end": "2014-09-07 23:00:00",
+    "paper_window_days": [
+      1096,
+      1346
+    ],
+    "rows": 48000,
+    "series": 8,
+    "start": "2014-01-01 00:00:00"
+  },
+  "source": {
+    "archive_sha256": "f6c4d0e0df12ecdb9ea008dd6eef3518adb52c559d04a9bac2e1b81dcfc8d4e1",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00321/LD2011_2014.txt.zip"
+  },
+  "status": "measured_data_prepared",
+  "tft": {
+    "config": {
+      "attention_head_size": 2,
+      "batch_size": 128,
+      "encoder_length": 168,
+      "hidden_continuous_size": 8,
+      "hidden_size": 16,
+      "horizon": 24,
+      "learning_rate": 0.001,
+      "max_epochs": 5,
+      "seed": 42
+    },
+    "device": "cpu",
+    "metrics": {
+      "mae_from_p50": 5.924569197930396,
+      "n_values": 192,
+      "p10_pinball": 1.1515541941917038,
+      "p50_pinball": 2.962284598965198,
+      "p90_pinball": 1.4711088828121621
+    },
+    "paper_reference": {
+      "p50_pinball": 0.055,
+      "p90_pinball": 0.027
+    },
+    "series": 8,
+    "status": "measured",
+    "test_forecast_values": 192,
+    "train_rows": 40520
+  }
+}

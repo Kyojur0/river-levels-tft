@@ -1,0 +1,98 @@
+# Station catalogue verified by the live hydrology probe on 2026-08-27.
+# Populate flood_monitoring.same_as/station_reference/wiski_id only from
+# explicit API metadata. Never infer a cross-API identifier from a GUID.
+archive_base_url: https://environment.data.gov.uk/hydrology
+live_base_url: https://environment.data.gov.uk/flood-monitoring
+measure_template: "{station_guid}-level-i-900-m-qualified"
+
+stations:
+  - station_guid: 8496ce69-482c-406a-a2f0-ac418ef8f099
+    name: Kingston
+    river: River Thames
+    role: core
+    measure_id: 8496ce69-482c-406a-a2f0-ac418ef8f099-level-i-900-m-qualified
+    flood_monitoring:
+      same_as: "http://environment.data.gov.uk/flood-monitoring/id/stations/3400TH"
+      station_reference: "3400TH"
+      wiski_id: "3400TH"
+      rloi_id: "7267"
+  - station_guid: 3c4d4f78-2d0e-474a-b884-65a9daca18fb
+    name: Thorverton
+    river: River Exe
+    role: core
+    measure_id: 3c4d4f78-2d0e-474a-b884-65a9daca18fb-level-i-900-m-qualified
+    flood_monitoring:
+      same_as: "http://environment.data.gov.uk/flood-monitoring/id/stations/45118"
+      station_reference: "45118"
+      wiski_id: "SS90F011"
+      rloi_id: "3260"
+  - station_guid: 8820d897-a09e-4857-8095-5834fee6962f
+    name: Bewdley
+    river: River Severn
+    role: core
+    measure_id: 8820d897-a09e-4857-8095-5834fee6962f-level-i-900-m-qualified
+    flood_monitoring:
+      same_as: "http://environment.data.gov.uk/flood-monitoring/id/stations/2001"
+      station_reference: "2001"
+      wiski_id: "2001"
+      rloi_id: "2001"
+  - station_guid: 0dcf81cb-5305-4e0b-b150-9b733ac44d0b
+    name: Colwick
+    river: River Trent
+    role: core
+    measure_id: 0dcf81cb-5305-4e0b-b150-9b733ac44d0b-level-i-900-m-qualified
+    flood_monitoring:
+      same_as: "http://environment.data.gov.uk/flood-monitoring/id/stations/4009"
+      station_reference: "4009"
+      wiski_id: "4009"
+      rloi_id: "2102"
+  - station_guid: 213d70b2-894b-406b-9dc3-31d3ccec7f54
+    name: Skelton
+    river: River Ouse
+    role: core
+    measure_id: 213d70b2-894b-406b-9dc3-31d3ccec7f54-level-i-900-m-qualified
+    flood_monitoring:
+      same_as: "http://environment.data.gov.uk/flood-monitoring/id/stations/F2405"
+      station_reference: "F2405"
+      wiski_id: "F2405"
+      rloi_id: "8184"
+  - station_guid: e786e60f-a0f1-4955-aa57-f22ba39c7427
+    name: Bywell
+    river: River Tyne
+    role: core
+    measure_id: e786e60f-a0f1-4955-aa57-f22ba39c7427-level-i-900-m-qualified
+    flood_monitoring:
+      same_as: "http://environment.data.gov.uk/flood-monitoring/id/stations/023001"
+      station_reference: "023001"
+      wiski_id: "023001"
+      rloi_id: "8040"
+  - station_guid: 9ad5d28c-7cfe-46db-b39d-58701689cd59
+    name: Caton
+    river: River Lune
+    role: stress-test
+    measure_id: 9ad5d28c-7cfe-46db-b39d-58701689cd59-level-i-900-m-qualified
+    flood_monitoring:
+      same_as: "http://environment.data.gov.uk/flood-monitoring/id/stations/724629"
+      station_reference: "724629"
+      wiski_id: "724629"
+      rloi_id: "5029"
+  - station_guid: 30b20164-0eb7-49cf-b8fc-5b8e7ef6caf9
+    name: Hereford Bridge
+    river: River Wye
+    role: stress-test
+    measure_id: 30b20164-0eb7-49cf-b8fc-5b8e7ef6caf9-level-i-900-m-qualified
+    flood_monitoring:
+      same_as: "http://environment.data.gov.uk/flood-monitoring/id/stations/055807_TG_320"
+      station_reference: "055807_TG_320"
+      wiski_id: "055807"
+      rloi_id: "4017"
+  - station_guid: 3c43b72d-03a7-46e1-86c7-76dd97808544
+    name: Roxton
+    river: River Great Ouse
+    role: stress-test
+    measure_id: 3c43b72d-03a7-46e1-86c7-76dd97808544-level-i-900-m-qualified
+    flood_monitoring:
+      same_as: "http://environment.data.gov.uk/flood-monitoring/id/stations/E21657"
+      station_reference: "E21657"
+      wiski_id: "033039"
+      rloi_id: "6172"

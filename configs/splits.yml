@@ -1,0 +1,10 @@
+# Initial chronological split for the verified two-year archive window.
+# Rolling-origin evaluation will refine the exact origins in Phase 4.
+data_start: 2024-01-01
+data_end_exclusive: 2026-01-01
+train_end_exclusive: 2025-07-01
+validation_end_exclusive: 2025-10-01
+test_end_exclusive: 2026-01-01
+encoder_hours: 168
+horizon_hours: 24
+rolling_origin_step_hours: 24
