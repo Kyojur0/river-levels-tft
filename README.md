@@ -3,6 +3,12 @@
 Temporal Fusion Transformer (TFT) reimplementation and transfer study for UK
 river-level forecasting.
 
+![Kingston (River Thames): hourly level and quality mask for the 2024-2025 study window](reports/figures/8496ce69-482c-406a-a2f0-ac418ef8f099.png)
+
+*Kingston (River Thames): hourly level for the two-year window, with masked
+bins marked below the series. One of these figures exists per station in
+`reports/figures/`.*
+
 ## Status
 
 This repository contains a runnable Phase 0-6 research pipeline. The
@@ -92,6 +98,10 @@ IDs must never be guessed from their appearance.
 - `reports/figures/tft_interpretability.png` and `src/interpretability.py`:
   variable-selection diagnostics from the measured Kingston TFT run.
 - `TECHNICAL_NOTE.md`: concise method, evidence, and limitation note.
+
+![TFT variable-selection weights: encoder, decoder, and static variables for the measured Kingston run](reports/figures/tft_interpretability.png)
+
+*Variable-selection diagnostics from the measured Kingston TFT run.*
 
 Raw JSONL/CSV data and run caches are ignored by the source-control rules to
 avoid accidental redistribution. Regenerate them with `python -m src.freeze`
